@@ -8,6 +8,7 @@ export const colors = {
     primary: { value: '#0d1117' },
     secondary: { value: '#161b22' },
     blue: { value: '#58a6ff' },
+    pink: { value: '#cb5674' },
   },
 
   gray: {

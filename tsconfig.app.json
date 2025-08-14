@@ -28,7 +28,8 @@
       "@portifolio/ui/*": ["src/app/libs/ui/*"],
       "@portifolio/pages/*": ["src/app/pages/*"],
       "@portifolio/themes/*": ["src/app/libs/theme/*"],
-      "@portifolio/hooks/*": ["src/app/libs/hooks/*"]
+      "@portifolio/hooks/*": ["src/app/libs/hooks/*"],
+      "@portifolio/assets/*": ["src/assets/*"]
     }
   },
   "include": ["src"]

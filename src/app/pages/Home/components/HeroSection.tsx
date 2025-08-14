@@ -20,7 +20,13 @@ export const HeroSection: React.FC = () => {
         <Text as='p' fontSize='medium' color='gray.50'>
           {t('helloMessage')}
         </Text>
-        <Text as='h1' fontSize='6xl' fontWeight='bold' color='base.white'>
+        <Text
+          as='h1'
+          fontSize='6xl'
+          fontWeight='bold'
+          color='base.white'
+          textAlign='center'
+        >
           {`Luis Gustavo Godoy Camargo`}
         </Text>
         <Text as='h2' fontSize='4xl' fontWeight='semibold' color='brand.blue'>
