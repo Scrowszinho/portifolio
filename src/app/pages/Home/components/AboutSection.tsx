@@ -15,6 +15,7 @@ export const AboutSection: React.FC = () => {
       gap={16}
       justifyContent='space-between'
       flexDir='column'
+      id='about'
     >
       <Text fontSize='5xl' color='base.white' fontWeight='bold'>
         {t('aboutMe')}
@@ -39,14 +40,44 @@ export const AboutSection: React.FC = () => {
           </Float>
         </Avatar.Root>
         <Flex direction='column' gap={3}>
-          <Text fontSize='medium' color='gray.50' maxW={600}>
+          <Text
+            fontSize='medium'
+            color='gray.50'
+            maxW={{
+              base: 500,
+              lg: 600,
+            }}
+            textAlign={{
+              base: 'center',
+              lg: 'unset',
+            }}
+            px={{
+              base: 4,
+              lg: 0,
+            }}
+          >
             {t('aboutMeText')}
           </Text>
-          <Text fontSize='x-large' fontWeight='semibold' color='base.white'>
+          <Text
+            fontSize='x-large'
+            textAlign={{
+              base: 'center',
+              lg: 'unset',
+            }}
+            fontWeight='semibold'
+            color='base.white'
+          >
             {t('aboutTechs')}
           </Text>
 
-          <Flex alignItems='center' gap={3}>
+          <Flex
+            alignItems='center'
+            px={{
+              base: 4,
+              lg: 0,
+            }}
+            gap={3}
+          >
             {['React', 'Angular', 'Vue.js', 'TypeScript', 'JavaScript'].map(
               (tech) => (
                 <Badge

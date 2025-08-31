@@ -3,7 +3,6 @@ import useLanguage from '../../hooks/translate';
 
 const navItems = [
   { key: 'about', href: '#about' },
-  { key: 'skills', href: '#skills' },
   { key: 'projects', href: '#projects' },
   { key: 'experience', href: '#experience' },
   { key: 'contact', href: '#contact' },
@@ -11,6 +10,12 @@ const navItems = [
 
 export const Header: React.FC = () => {
   const { t } = useLanguage();
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <Flex
       as='header'
@@ -33,6 +38,7 @@ export const Header: React.FC = () => {
             color='gray.50'
             transition='0.3s'
             key={index}
+            onClick={() => scrollToSection(item.href)}
             cursor='pointer'
             _hover={{
               color: 'base.white',

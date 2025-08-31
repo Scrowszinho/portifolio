@@ -29,7 +29,15 @@ export const HeroSection: React.FC = () => {
         >
           {`Luis Gustavo Godoy Camargo`}
         </Text>
-        <Text as='h2' fontSize='4xl' fontWeight='semibold' color='brand.blue'>
+        <Text
+          as='h2'
+          fontSize={{
+            base: '2xl',
+            lg: '4xl',
+          }}
+          fontWeight='semibold'
+          color='brand.blue'
+        >
           {t('professionalLevel')}
         </Text>
       </Flex>
